@@ -41,6 +41,9 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1>Cryptos</h1>
+        
+        <button onClick={getCrypto}> Récupérer les cryptos</button>
+        
         {mappedCrypto.length > 0 ?
           <table>
             <thead>
@@ -54,7 +57,6 @@ const Home: NextPage = () => {
           </table>
           : <h1> Veuillez cliquer sur le bouton pour récupérer les données des cryptos</h1>
         }
-        <button onClick={getCrypto}> Récupérer les cryptos</button>
       </main>
 
       <footer className={styles.footer}>
