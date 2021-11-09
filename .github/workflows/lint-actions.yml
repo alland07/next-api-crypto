@@ -1,0 +1,19 @@
+name: Lint
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  Linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files in pages
+        run : |
+          cd pages
+          ls ${{ github.workspace }}
