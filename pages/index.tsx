@@ -20,7 +20,6 @@ const Home: NextPage = () => {
     )
   });
   
-  
   const getCrypto = () => {
     axios.get('https://api.binance.com/api/v3/ticker/price')
       .then(res=>{
