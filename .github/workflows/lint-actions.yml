@@ -13,7 +13,4 @@ jobs:
   Linting:
     runs-on: ubuntu-latest
     steps:
-      - name: List files in pages
-        run : |
-          cd pages
-          ls ${{ github.workspace }}
+      - run: echo "lint test"
