@@ -1,4 +1,4 @@
-export interface requestResponse {
+export default interface requestResponse {
   symbol: string,
   price: string
 }
