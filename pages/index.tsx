@@ -12,8 +12,8 @@ const Home: NextPage = () => {
   
   const mappedCrypto = cryptosList.map((child: requestResponse, key: number)=>{
     return(
-      <tr>
-        <td key={key}>{child.symbol}</td>
+      <tr key={key}>
+        <td>{child.symbol}</td>
         <td>{child.price}</td>
       </tr>
       
